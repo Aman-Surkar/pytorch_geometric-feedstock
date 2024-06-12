@@ -1,5 +1,5 @@
 {% set name = "torch_geometric" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.3" %}
 
 package:
   name: py{{ name|lower }}
@@ -22,6 +22,7 @@ requirements:
     - setuptools {{ setuptools }}
     - flit-core
   run:
+    - aiohttp
     - googledrivedownloader  {{ googledrivedownloader }}
     - jinja2
     - networkx  {{ networkx }}
